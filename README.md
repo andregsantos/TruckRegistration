@@ -26,3 +26,5 @@ To know more about how to setup your enviroment visit the [Microsoft .NET Downlo
 - SQL Lite
 
 ## 
+You can run the project :star:
+https://truckregistration20220529160654.azurewebsites.net
