@@ -25,10 +25,11 @@ namespace TruckRegistration.Data.Entity
                     "The year must be the same as the current year.");
             }
 
-            if (!(YearOfModel == DateTime.Now.Year || YearOfModel == DateTime.Now.Year + 1))
+            if (!(YearOfModel == Year || YearOfModel == Year+1))
             {
                 yield return new ValidationResult(
                     "The model year must be the current or subsequent year.");
+
             }
         }
     }

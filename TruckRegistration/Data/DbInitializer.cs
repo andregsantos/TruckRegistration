@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using TruckRegistration.Data.Entity;
 
 namespace TruckRegistration.Data
@@ -7,18 +8,17 @@ namespace TruckRegistration.Data
     {
         public static void Initialize(ApplicationDbContext context)
         {
-            if (context.Trucks.Count() > 0)
-                return;
+            context.Database.Migrate();
 
             var trucks = new Truck[]
-            {
+           {
                 new Truck { Year = 2000,  YearOfModel =2000,   Model = "FH"
                 },
                 new Truck {Year = 2000, YearOfModel = 2001,  Model = "FH"
                 },
                 new Truck {Year = 2000, YearOfModel =2000,  Model = "FM"
                 }
-            };
+          };
 
             foreach (Truck c in trucks)
             {
