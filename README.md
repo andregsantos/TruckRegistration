@@ -27,4 +27,4 @@ To know more about how to setup your enviroment visit the [Microsoft .NET Downlo
 
 ## 
 You can run the project :star:
-https://truckregistration20220529160654.azurewebsites.net
+https://truckregistration20220529162043.azurewebsites.net
